@@ -1,0 +1,57 @@
+Docker binary already present, will use that one.
+Docker version 18.09.0, build 4d60db4
+-- LOG 06:33:55:012687100 Ensuring docker works...
+-- LOG 06:33:55:065651600 Ensuring docker-selenium is available...
+haveged: haveged starting up
+Copying files for Dashboard...
+cp: cannot create regular file '/home/seluser/videos/dashboard.html': No such file or directory
+Starting Nginx reverse proxy...
+Starting Selenium Hub...
+..06:33:55.808 [main] INFO  o.o.grid.selenium.GridLauncherV3 - Selenium server version: 3.141.59, revision: unknown
+.06:33:55.879 [main] INFO  o.o.grid.selenium.GridLauncherV3 - Launching Selenium Grid hub on port 4445
+.06:33:56.133 [main] INFO  d.z.e.z.c.DockerContainerClient - About to clean up any left over DockerSelenium containers created by Zalenium
+..06:33:56.718 [AutoStartProxyPoolPoller] INFO  d.z.e.z.proxy.AutoStartProxySet - Starting poller.
+...06:33:57.170 [main] INFO  d.z.ep.zalenium.aspect.HubAspect - Registering custom Zalenium servlets
+06:33:57.257 [main] INFO  org.openqa.grid.web.Hub - Selenium Grid hub is up and running
+06:33:57.257 [main] INFO  org.openqa.grid.web.Hub - Nodes should register to http://172.17.0.2:4445/grid/register/
+06:33:57.258 [main] INFO  org.openqa.grid.web.Hub - Clients should connect to http://172.17.0.2:4445/wd/hub
+Selenium Hub started!
+Sauce Labs not enabled...
+Browser Stack not enabled...
+TestingBot not enabled...
+CBT not enabled...
+LambdaTest not enabled...
+Zalenium is now ready!
+*************************************** Data Processing Agreement ***************************************
+By using this software you agree that the following non-PII (non personally identifiable information)
+data will be collected, processed and used by Zalando SE for the purpose of improving our test
+infrastructure tools. Anonymisation with respect of the IP address means that only the first two octets
+of the IP address are collected.
+
+See the complete license at https://github.com/zalando/zalenium/blob/master/LICENSE.md
+*************************************** Data Processing Agreement ***************************************
+06:34:03.114 [Thread-10] INFO  d.z.e.z.registry.ZaleniumRegistry - Registered a node http://172.17.0.3:40000
+06:34:03.643 [Thread-11] INFO  d.z.e.z.registry.ZaleniumRegistry - Registered a node http://172.17.0.4:40001
+06:34:13.510 [qtp109069556-23] INFO  o.o.g.w.s.handler.RequestHandler - Got a request to create a new session: Capabilities {browserName: chrome, version: }
+06:34:13.511 [qtp109069556-21] INFO  o.o.g.w.s.handler.RequestHandler - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, version: }
+06:34:13.515 [qtp109069556-23] INFO  d.z.e.z.registry.ZaleniumRegistry - Adding sessionRequest for {browserName=chrome, version=}
+06:34:13.516 [qtp109069556-21] INFO  d.z.e.z.registry.ZaleniumRegistry - Adding sessionRequest for {browserName=firefox, version=, acceptInsecureCerts=true}
+06:34:13.518 [http://172.17.0.3:40000] INFO  org.openqa.grid.internal.TestSlot - Trying to create a new session on test slot {server:CONFIG_UUID=be819b1f-e1bf-4f70-be2a-80d286a4e605, seleniumProtocol=WebDriver, zal:tz=Europe/Berlin, version=77.0.3865.90, platform=LINUX, acceptSslCerts=true, zal:screenResolution=1920x1080, zal:screen-resolution=1920x1080, browserName=chrome, zal:resolution=1920x1080, maxInstances=1, platformName=LINUX}
+06:34:13.521 [Matcher thread] INFO  d.z.e.z.registry.ZaleniumRegistry - Test session with internal key 222a84ac-f043-460a-9a1f-a2f9704a9c66 assigned to remote (http://172.17.0.3:40000) after 0 seconds (54 ms).
+06:34:13.526 [http://172.17.0.4:40001] INFO  org.openqa.grid.internal.TestSlot - Trying to create a new session on test slot {server:CONFIG_UUID=e17e3d8f-afd9-4b36-a04a-b2135c08dbc1, seleniumProtocol=WebDriver, zal:tz=Europe/Berlin, version=69.0, platform=LINUX, acceptSslCerts=true, zal:screenResolution=1920x1080, zal:screen-resolution=1920x1080, browserName=firefox, zal:resolution=1920x1080, maxInstances=1, platformName=LINUX}
+06:34:13.531 [Matcher thread] INFO  d.z.e.z.registry.ZaleniumRegistry - Test session with internal key ec054384-b709-4479-9308-694af88c0329 assigned to remote (http://172.17.0.4:40001) after 0 seconds (65 ms).
+06:34:39.632 [http://172.17.0.4:40001] INFO  d.z.e.z.p.DockerSeleniumRemoteProxy - Session ec054384-b709-4479-9308-694af88c0329 completed. Node should shutdown soon...
+06:34:54.805 [http://172.17.0.3:40000] INFO  d.z.e.z.p.DockerSeleniumRemoteProxy - Session 222a84ac-f043-460a-9a1f-a2f9704a9c66 completed. Node should shutdown soon...
+Trapped SIGTERM/SIGINT so shutting down Zalenium gracefully...
+-- LOG 06:34:56:850634100 WaitForVideosTransferred succeeded for a total of 1
+Stopping Hub...
+06:34:56.857 [DockerContainerClient shutdown hook] INFO  d.z.e.z.c.DockerContainerClient - About to clean up any left over DockerSelenium containers created by Zalenium
+*************************************** Data Processing Agreement ***************************************
+By using this software you agree that the following non-PII (non personally identifiable information)
+data will be collected, processed and used by Zalando SE for the purpose of improving our test
+infrastructure tools. Anonymisation with respect of the IP address means that only the first two octets
+of the IP address are collected.
+
+See the complete license at https://github.com/zalando/zalenium/blob/master/LICENSE.md
+*************************************** Data Processing Agreement ***************************************
+06:34:56.869 [Saving dashboard.] INFO  d.z.ep.zalenium.dashboard.Dashboard - Saving dashboard...
